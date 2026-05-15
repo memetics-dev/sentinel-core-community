@@ -1,0 +1,18 @@
+# runtime state
+.sentinel-core/
+
+# frontend artifacts
+apps/ops-console/.next/
+apps/ops-console/node_modules/
+
+# python artifacts
+**/__pycache__/
+**/*.pyc
+**/.pytest_cache/
+**/.venv/
+
+# local data
+**/*.db
+**/.DS_Store
+.env
+.env.*

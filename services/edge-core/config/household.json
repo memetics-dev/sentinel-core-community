@@ -1,0 +1,94 @@
+{
+  "household_id": "community_preview_home",
+  "household_label": "Sentinel Community Preview Residence",
+  "occupants": [
+    {
+      "id": "resident_one",
+      "label": "Resident One",
+      "role": "resident"
+    },
+    {
+      "id": "resident_two",
+      "label": "Resident Two",
+      "role": "resident"
+    }
+  ],
+  "trusted_devices": [
+    {
+      "id": "device_resident_one_phone",
+      "label": "Resident One Phone",
+      "occupant_id": "resident_one",
+      "sensor_type": "ble",
+      "sensor_id": "ble_kitchen_resident_01"
+    },
+    {
+      "id": "device_resident_two_tag",
+      "label": "Resident Two BLE Tag",
+      "occupant_id": "resident_two",
+      "sensor_type": "ble",
+      "sensor_id": "ble_bedroom_resident_02"
+    }
+  ],
+  "zones": [
+    {
+      "id": "driveway",
+      "label": "Driveway",
+      "sensitivity": "high",
+      "night_access_expected": false,
+      "connected_zones": [
+        "garage"
+      ]
+    },
+    {
+      "id": "garage",
+      "label": "Garage",
+      "sensitivity": "high",
+      "night_access_expected": false,
+      "connected_zones": [
+        "driveway",
+        "hallway"
+      ]
+    },
+    {
+      "id": "hallway",
+      "label": "Hallway",
+      "sensitivity": "medium",
+      "night_access_expected": true,
+      "connected_zones": [
+        "garage",
+        "kitchen",
+        "living_room",
+        "bedroom"
+      ]
+    },
+    {
+      "id": "kitchen",
+      "label": "Kitchen",
+      "sensitivity": "medium",
+      "night_access_expected": true,
+      "connected_zones": [
+        "hallway",
+        "living_room"
+      ]
+    },
+    {
+      "id": "living_room",
+      "label": "Living Room",
+      "sensitivity": "medium",
+      "night_access_expected": true,
+      "connected_zones": [
+        "hallway",
+        "kitchen"
+      ]
+    },
+    {
+      "id": "bedroom",
+      "label": "Bedroom",
+      "sensitivity": "low",
+      "night_access_expected": true,
+      "connected_zones": [
+        "hallway"
+      ]
+    }
+  ]
+}
