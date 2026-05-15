@@ -1,5 +1,6 @@
 # Sentinel Core Community Preview Export
 
+Sentinel Core Community Preview is an experimental local-first residential intelligence preview intended for controlled technical evaluation and household behavioural testing. It is not a production-certified alarm replacement.
 This folder is a cleaned public-facing Community Preview package intended for a future separate GitHub repository.
 
 It contains:
